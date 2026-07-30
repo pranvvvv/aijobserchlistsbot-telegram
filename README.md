@@ -21,6 +21,8 @@
 [![GitHub Stars](https://img.shields.io/github/stars/tarunlnmiit/autopilot-jobhunt?style=social)](https://github.com/tarunlnmiit/autopilot-jobhunt/stargazers)
 [![autopilot-jobhunt MCP server](https://glama.ai/mcp/servers/tarunlnmiit/autopilot-jobhunt/badges/score.svg)](https://glama.ai/mcp/servers/tarunlnmiit/autopilot-jobhunt)
 
+**Seen by 90K+ people** — [the Instagram reel that launched it](https://www.instagram.com/p/DZhkDvoxtt2/).
+
 Published on [PyPI](https://pypi.org/project/autopilot-jobhunt/) and listed on the [Official MCP Registry](https://registry.modelcontextprotocol.io) (`io.github.tarunlnmiit/autopilot-jobhunt`), [Glama](https://glama.ai/mcp/servers/tarunlnmiit/autopilot-jobhunt) (Quality A), and [Smithery](https://smithery.ai/servers/tarungupta-y12/autopilot-jobhunt) (MCPB bundle).
 
 **[📖 Full setup guide with Claude Code MCP integration → SETUP.md](SETUP.md)**
