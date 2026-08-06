@@ -20,6 +20,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/tarunlnmiit/autopilot-jobhunt?style=social)](https://github.com/tarunlnmiit/autopilot-jobhunt/stargazers)
 [![autopilot-jobhunt MCP server](https://glama.ai/mcp/servers/tarunlnmiit/autopilot-jobhunt/badges/score.svg)](https://glama.ai/mcp/servers/tarunlnmiit/autopilot-jobhunt)
+[![Listed on CodeGuilds](https://codeguilds.dev/badge/autopilot-jobhunt)](https://codeguilds.dev/packages/autopilot-jobhunt)
 
 **Seen by 90K+ people** — [the Instagram reel that launched it](https://www.instagram.com/p/DZhkDvoxtt2/).
 
