@@ -78,6 +78,14 @@ def _chat_with_claude_cli(config: dict, messages: list[dict], temperature: float
             capture_output=True,
             text=True,
             timeout=300,
+            # On Windows, a global npm install puts a claude.cmd shim on PATH.
+            # subprocess.run(["claude", ...]) without shell=True calls CreateProcess
+            # directly, which can't execute .cmd files and fails as if "claude"
+            # doesn't exist at all. shell=True routes through cmd.exe, which does
+            # PATHEXT resolution; list2cmdline still quotes each arg correctly for
+            # a list input, so this doesn't change argument handling on POSIX
+            # (unaffected — shell stays False there).
+            shell=(os.name == "nt"),
         )
     except FileNotFoundError:
         raise RuntimeError(
