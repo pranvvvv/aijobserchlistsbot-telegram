@@ -70,6 +70,31 @@ scans through `claude_cli` (works, but each call spends ~25–30k tokens of my
 Claude subscription's context, so it's for periodic real passes, not a
 nightly job).
 
+## A real market pattern, not a bug: senior-biased startups vs. a junior candidate
+
+Two full scans (140 upstream companies, then a curated 41-company remote-friendly
+list) both came back with **0 matches at `min_score: 55`** — verified via
+`scan.log`'s DEBUG output that this wasn't a scoring bug: the LLM correctly
+scored dozens of genuinely on-site/hybrid Mistral AI roles at 10–40 with
+accurate location reasoning, and correctly scored Supabase/Modal postings low
+because what those specific companies had open *right now* skewed almost
+entirely senior/staff (Postgres internals, Rust/C systems roles, $150K–$350K,
+several explicitly US-onsite). Small remote-first startups tend to hire
+senior engineers who need no ramp-up — precisely because they're too lean to
+mentor juniors. That's a real pattern in the current market, not something to
+route around by picking different companies.
+
+Lowered `min_score` to **40** in `config.json` (gitignored, not shown here) to
+surface "partial fit, worth trying" roles instead of nothing, matching the
+tool's own scoring guide (40–59 = "apply if pipeline is thin" — true here,
+pipeline is empty). Also worth knowing: job **boards** (LinkedIn, Remotive,
+RemoteOK — see the separate `ai-job-search` repo) surfaced genuine intern-titled
+real postings (e.g. "AI Engineer Intern", "GenAI Intern") at zero LLM cost,
+because they aggregate across thousands of companies rather than a hand-picked
+few — structurally better suited to entry-level search than this tool's
+company-by-company careers-page model, which shines more for someone senior
+targeting specific employers.
+
 ## Day to day
 
 ```bash
